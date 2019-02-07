@@ -1,0 +1,4 @@
+.hero-background {
+  clip-path: polygon(0px 420px, 960px 300px, 960px 0px, 0px 0px);
+  background: url("https://unsplash.com");
+}
