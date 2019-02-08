@@ -43,11 +43,20 @@ nav .link:hover {
   -webkit-background-clip: text;
 }
 
+/* --------main content--------- */
+
 .content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-flow: column;
   flex-wrap: wrap;
+}
+
+.content h1 {
+  margin-bottom: 0px;
 }
 
 .quote-selector {
@@ -60,11 +69,21 @@ nav .link:hover {
 }
 
 .hero {
-  clip-path: polygon(0px 420px, 960px 300px, 960px 0px, 0px 0px);
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)
+  margin: 0;
+  height: 100vh;
+  clip-path: polygon(0px 90%, 100% 70%, 100% 0px, 0px 0px);
+  background-image: linear-gradient(to top, #8e6dddc2 0%, #ffb4eac7 100%),
     url("../assets/photos/matt-holmes-1329881-unsplash.jpg");
-  height: 500px;
-  width: 98%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* -------quotes styles------- */
+
+.quotebuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ---------- footer styles ---------- */
@@ -72,6 +91,12 @@ nav .link:hover {
 .footer {
   max-width: 1000px;
   margin: auto;
+  margin-top: 200px;
+  margin-bottom: 250px;
+}
+
+footer a {
+  color: black;
 }
 
 .footer-links {

@@ -11,6 +11,11 @@ let quotes = [
   "“One day there will be no borders, no boundaries, no flags and no countries and the only passport will be the heart” – Carlos Santana"
 ];
 
+var back = document.getElementById("back");
+var forward = document.getElementById("forward");
+forward.addEventListener("click", nextQuote());
+back.addEventListener("click", lastQuote());
+
 function quoteGen() {
   for (i = 0; i < quotes.length; i++) {
     let currentQuote = quoteGen[i];
@@ -18,4 +23,8 @@ function quoteGen() {
   }
 }
 
-setInterval(quoteGen, 3000);
+setInterval(quoteGen, 30000);
+
+function nextQuote() {}
+
+function lastQuote() {}
