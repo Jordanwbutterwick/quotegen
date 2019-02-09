@@ -86,6 +86,11 @@ nav .link:hover {
   align-items: center;
 }
 
+.quoteBox p {
+  font-family: "Cormorant", sans-serif;
+  font-size: 1.3em;
+}
+
 /* ---------- footer styles ---------- */
 
 .footer {
