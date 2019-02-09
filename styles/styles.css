@@ -85,6 +85,8 @@ nav .link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .quoteBox p {

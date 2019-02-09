@@ -13,7 +13,7 @@ let quotes = [
 
 var currentQuote = 0;
 setInterval(quoteGen, 100);
-setInterval(quoteTimer, 10000);
+setInterval(quoteTimer, 15000);
 window.onload = quoteGen;
 
 // button functionality
