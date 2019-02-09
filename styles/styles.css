@@ -76,6 +76,7 @@ nav .link:hover {
     url("../assets/photos/matt-holmes-1329881-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 /* -------quotes styles------- */
