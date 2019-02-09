@@ -16,6 +16,8 @@ setInterval(quoteGen, 100);
 setInterval(quoteTimer, 10000);
 window.onload = quoteGen;
 
+// button functionality
+
 var forward = document.getElementById("forwards");
 var backward = document.getElementById("backwards");
 
@@ -37,8 +39,10 @@ forward.addEventListener("click", nextQuote);
 
 backward.addEventListener("click", lastQuote);
 
+// quote generator function and timer function
+
 function quoteGen() {
-  document.getElementById("quoteBox").innerHTML = [quotes[currentQuote]];
+  document.getElementById("quote-box").innerHTML = [quotes[currentQuote]];
 }
 
 function quoteTimer() {
@@ -47,3 +51,9 @@ function quoteTimer() {
     currentQuote = 0;
   }
 }
+
+// quote styles generator function
+
+var quoteBox = document.getElementById("quote-box");
+quoteBox.style.fontSize = "1.3em";
+quoteBox.style.fontFamily = "Montserrat";
