@@ -15,6 +15,17 @@ h3 {
   font-family: "Cormorant";
 }
 
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
 /* nav styles */
 .nav-bar {
   display: flex;
@@ -41,6 +52,17 @@ nav .link:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  nav li {
+    margin-right: 500px;
+  }
 }
 
 /* --------main content--------- */
@@ -72,7 +94,7 @@ nav .link:hover {
   margin: 0;
   height: 100vh;
   clip-path: polygon(0px 90%, 100% 70%, 100% 0px, 0px 0px);
-  background-image: linear-gradient(to top, #8e6dddc2 0%, #ffb4eac7 100%),
+  background-image: linear-gradient(to top, #55408a75 0%, #ffb4ea65 100%),
     url("../assets/photos/matt-holmes-1329881-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -87,11 +109,6 @@ nav .link:hover {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
-}
-
-.quoteBox p {
-  font-family: "Cormorant", sans-serif;
-  font-size: 1.3em;
 }
 
 /* ---------- footer styles ---------- */
